@@ -4,7 +4,7 @@ Applikationen ska byggas med hjälp av ramverket Blazor Server för server-API:e
 
 ---
 
-Applikationen ska innehålla föjande funktionalitet:
+Jag har planerat för att applikationen ska innehålla föjande funktionalitet:
 
 * Ska använda ramverket SignalR för realtidskommunikation mellan klientgränssnittet och server-side API:et
 * Ska ha en navigationsmeny som länkar till en chatt-sida och en sida för viktiga meddelanden, samt ska en "tom" länk finnas till larm-sidan
