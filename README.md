@@ -1,7 +1,8 @@
 # Meddelandecentralen
-
 Jag har valt att göra en chatt-applikation där alla anslutna medarbetare kan skriva meddelanden till alla.
 Applikationen ska byggas med hjälp av ramverket Blazor Server för server-API:et och Blazor WebAssembly för klientgränssnittet.
+
+---
 
 Applikationen ska innehålla föjande funktionalitet:
 
