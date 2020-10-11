@@ -1,0 +1,4 @@
+﻿<StaticWebAssets Version="1.0">
+  <ContentRoot BasePath="/" Path="C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\wwwroot\" />
+  <ContentRoot BasePath="/" Path="C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\bin\Debug\netstandard2.1\wwwroot\" />
+</StaticWebAssets>
