@@ -1,0 +1,9 @@
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Shared\bin\Debug\netstandard2.1\ShutUp.Shared.deps.json
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Shared\bin\Debug\netstandard2.1\ShutUp.Shared.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Shared\bin\Debug\netstandard2.1\ShutUp.Shared.pdb
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Shared\obj\Debug\netstandard2.1\ShutUp.Shared.csprojAssemblyReference.cache
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Shared\obj\Debug\netstandard2.1\ShutUp.Shared.AssemblyInfoInputs.cache
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Shared\obj\Debug\netstandard2.1\ShutUp.Shared.AssemblyInfo.cs
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Shared\obj\Debug\netstandard2.1\ShutUp.Shared.csproj.CoreCompileInputs.cache
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Shared\obj\Debug\netstandard2.1\ShutUp.Shared.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Shared\obj\Debug\netstandard2.1\ShutUp.Shared.pdb
