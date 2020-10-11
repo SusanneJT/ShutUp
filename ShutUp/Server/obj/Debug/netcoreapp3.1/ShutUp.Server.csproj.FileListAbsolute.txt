@@ -213,3 +213,13 @@ C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\obj\Debug\netcor
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\obj\Debug\netcoreapp3.1\ShutUp.Server.dll
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\obj\Debug\netcoreapp3.1\ShutUp.Server.pdb
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\obj\Debug\netcoreapp3.1\ShutUp.Server.genruntimeconfig.cache
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Connections.Abstractions.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Connections.Client.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Connections.Common.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SignalR.Client.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SignalR.Client.Core.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SignalR.Common.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
