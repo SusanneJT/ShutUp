@@ -77,6 +77,13 @@ using ShutUp.Client.Shared;
 #line hidden
 #nullable disable
 #nullable restore
+#line 10 "C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\_Imports.razor"
+using ShutUp.Client.Services;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\Pages\FetchData.razor"
 using ShutUp.Shared;
 

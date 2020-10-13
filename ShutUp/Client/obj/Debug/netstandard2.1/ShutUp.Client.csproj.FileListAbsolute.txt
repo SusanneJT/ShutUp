@@ -404,10 +404,8 @@ C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netsta
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\d04zIStVcFNO5larHi32IT4SSemvK1abhwxWZVFJcRM=.hash
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\ZPq6B-OiLSulwux7YLXx-NihIbjxBmbDQijJemWNhow=.hash
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\zT4jWv9mA9ljJBiDW5pkQqXrJMd5IWsU7LQ9Nnjdios=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\P9L_1SDz049--pvJclNcVZV0BxcMgOTwFZuHoAcXIDg=.hash
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\82sEKBgu95AIpX2e3BERkGfab67cRbYE_U9pXDXZrwc=.hash
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\MGgkslhetJPueVToOvktCyKIWYeYUzZYHf7-ZZANxzI=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\6MaPzJPKoFKSnklzCQRS0BCEcpm8VVuXLOcWgqRLEfQ=.hash
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.SignalR.Client.dll.gz
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.SignalR.Common.dll.gz
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.Connections.Abstractions.dll.gz
@@ -428,6 +426,8 @@ C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netsta
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.SignalR.Client.Core.dll.br
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.SignalR.Protocols.Json.dll.br
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Threading.Channels.dll.br
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\ZHSz_I0b2MidAbdp7hXDt1gM2R-9RYJIBdhGbXazv48=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\lq51O2_SUHQYugl1Jz9WJaGW2VgBlWjKYWsXjmGMwRc=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\Lw6PgoaROVkVqFpfRd_ahgaZOzU3PX4uwDH4Hxj0xeo=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\AL30h1AO21xECS2L1gqXwQCKiIpz3gEsk_wdtOtF1Bc=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\FEHMkrAj9ZZ1Ytk-5AqZGdA9LSNs-qU9wYx3dIOFyxU=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\65Opy7814kVwp8SS0joi43bOaNZEqtsZDMN8ixU04Rw=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\sxSSKREkWB7I7WdRhq6jkk5EDi_6JnPfZUGPqSGU-Rw=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\onjuFoQzdUrqRfjJhULTPbUcKw2NhPzBKlhqm0vPWts=.hash

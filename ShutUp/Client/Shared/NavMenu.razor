@@ -1,4 +1,7 @@
-﻿<div class="top-row pl-4 navbar navbar-dark">
+﻿@using ShutUp.Client.Services.StateContainers
+@inject MessageStateContainer MessageState
+
+<div class="top-row pl-4 navbar navbar-dark">
     <a class="navbar-brand" href="">Shut Up!</a>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
@@ -24,14 +27,13 @@
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="chat">
-                <span class="oi oi-chat" aria-hidden="true"></span> Chat
+                <span class="oi oi-chat" aria-hidden="true"></span> Chat (@MessageState.Messages.Count)
             </NavLink>
         </li>
     </ul>
 </div>
 
-@code {
-    private bool collapseNavMenu = true;
+@code { private bool collapseNavMenu = true;
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
 
@@ -39,4 +41,5 @@
     {
         collapseNavMenu = !collapseNavMenu;
     }
-}
+
+    }
