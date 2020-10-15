@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using System.Linq;
 using ShutUp.Server.Hubs;
+using ShutUp.Server.Models;
 
 namespace ShutUp.Server
 {
@@ -25,6 +26,7 @@ namespace ShutUp.Server
         {
 
             services.AddSignalR();
+            services.AddScoped<IMessageRepository, MessageRepository>();
             services.AddControllersWithViews();
             services.AddResponseCompression(opts =>
             {

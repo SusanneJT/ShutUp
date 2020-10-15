@@ -426,8 +426,8 @@ C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netsta
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.SignalR.Client.Core.dll.br
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\Microsoft.AspNetCore.SignalR.Protocols.Json.dll.br
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\compressed\_framework\_bin\System.Threading.Channels.dll.br
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\AL30h1AO21xECS2L1gqXwQCKiIpz3gEsk_wdtOtF1Bc=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\FEHMkrAj9ZZ1Ytk-5AqZGdA9LSNs-qU9wYx3dIOFyxU=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\65Opy7814kVwp8SS0joi43bOaNZEqtsZDMN8ixU04Rw=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\sxSSKREkWB7I7WdRhq6jkk5EDi_6JnPfZUGPqSGU-Rw=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\onjuFoQzdUrqRfjJhULTPbUcKw2NhPzBKlhqm0vPWts=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\hnF9cVEbbXcttAq8x0XRitIHqxvuEFRGvKAUzg8LaQk=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\5QGZA2gLnQV54HvGIbYQDb8CDWWHzFRA8V_fDRGS8G8=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\eQbDTT_xOHwiYmF--mATVluC1hH_B07Oix4eaJunx-c=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\m4IdTjP8mrPnYbf2T-G9RA6i6ZFObzlNpVlYrrk6nyQ=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\RHWkkarEWbbrF6a8-QMeUt-aLAJF_5FO20mauUk56bY=.hash

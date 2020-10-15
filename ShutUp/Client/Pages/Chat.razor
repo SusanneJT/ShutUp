@@ -1,36 +1,46 @@
 ﻿@page "/chat"
 @using Microsoft.AspNetCore.SignalR.Client
 @using ShutUp.Client.Services.StateContainers
+@using ShutUp.Client.Services.ApiServices
 @inject NavigationManager NavigationManager
-@inject MessageStateContainer MessageState
+@inject MessageStateContainer _messageState
+@inject MessageApi _messageApi
 
 @implements IDisposable
 
 
-<h3>Chat</h3>
+<h3>Chatt</h3>
+@if (loading)
+{
+    <p>Loading</p>
+}
+else
+{
+    <div class="form-group">
+        <label>
+            User:
+            <input @bind="userInput" />
+        </label>
+    </div>
+    <div class="form-group">
+         <label>
+            Message:
+            <input @bind="messageInput" size="50" />
+         </label>
+    </div>
+    <button @onclick="Send" disabled="@(!IsConnected)">Send</button>
 
-<div class="form-group">
-    <label>
-        User:
-        <input @bind="userInput" />
-    </label>
-</div>
-<div class="form-group">
-    <label>
-        Message:
-        <input @bind="messageInput" size="50" />
-    </label>
-</div>
-<button @onclick="Send" disabled="@(!IsConnected)">Send</button>
+    <hr>
 
-<hr>
+    <ul id="messagesList" class="list-group">
+        @foreach (var message in _messageState.Messages)
+        {
+            <li class="list-group-item">
+                @message.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
+                @message.MessageText
+            </li>
+        }
+    </ul>
+}
 
-<ul id="messagesList" class="list-group">
-    @foreach (var message in MessageState.Messages)
-    {
-        <li class="list-group-item">
-            @message.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
-            @message.MessageText
-        </li>
-    }
-</ul>
+

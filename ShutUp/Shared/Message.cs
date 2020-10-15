@@ -8,7 +8,7 @@ namespace ShutUp.Shared
     {
         public string Name { get; set; }
         public string MessageText { get; set; }
-        public int MessegeId { get; set; }
+        public int MessageId { get; set; }
         public DateTime Date { get; set; }
 
     }

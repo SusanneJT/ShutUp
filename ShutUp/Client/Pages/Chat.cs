@@ -15,21 +15,31 @@ namespace ShutUp.Client.Pages
         private Message message;
         private string userInput;
         private string messageInput;
+        private bool loading = true;
 
         protected override async Task OnInitializedAsync()
         {
+            //Should be removed when/if mockdatabase is added
+            if(_messageState.Messages.Count() == 0)
+                _messageState.Messages = await _messageApi.GetAllMessages();
+
+            if (_messageState.Messages.Count() != 0)
+            {
+                loading = false;
+            }
+
             hubConnection = new HubConnectionBuilder()
                 .WithUrl(NavigationManager.ToAbsoluteUri("/chathub"))
                 .Build();
 
             hubConnection.On<Message>("ReceiveMessage", (message) =>
             {
-                MessageState.Messages.Add(message);
+                _messageState.Messages.Add(message);
                 StateHasChanged();
             });
 
             await hubConnection.StartAsync();
-            MessageState.OnChange += StateHasChanged;
+            _messageState.OnChange += StateHasChanged;
         }
 
         Task Send()
