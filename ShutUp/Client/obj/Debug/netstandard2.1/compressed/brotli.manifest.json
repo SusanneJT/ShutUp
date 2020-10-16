@@ -1,7 +1,7 @@
 {
   "FilesToCompress": [
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\eQbDTT_xOHwiYmF--mATVluC1hH_B07Oix4eaJunx-c=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\j_11BLl1XXDO5jBR-LAJhPTGg3PtJ7pyUL30k0dYi3o=.hash",
       "Source": "C:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\ShutUp.Client.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/ShutUp.Client.dll.br"
     },
@@ -261,7 +261,17 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.AspNetCore.Components.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\hnF9cVEbbXcttAq8x0XRitIHqxvuEFRGvKAUzg8LaQk=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\7_FtaZd2xSysaMLC59XhYdtkNMZ15ha0lk73dxPdT5w=.hash",
+      "Source": "C:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Blazored.LocalStorage.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Blazored.LocalStorage.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash",
+      "Source": "C:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
+      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.br"
+    },
+    {
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\UoI-5J51CEju4OSysdj_BHa_jiSd-2e5inHQjBHub90=.hash",
       "Source": "C:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\ShutUp.Shared.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/ShutUp.Shared.dll.br"
     },
@@ -306,22 +316,17 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.Extensions.FileProviders.Abstractions.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=.hash",
-      "Source": "C:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.dll",
-      "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.dll.br"
-    },
-    {
       "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\czNf3btAeBW-vvID5LAfgcsNZ_GM3ssVuPaMflcg0rs=.hash",
       "Source": "C:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\Microsoft.JSInterop.WebAssembly.dll",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/Microsoft.JSInterop.WebAssembly.dll.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\m4IdTjP8mrPnYbf2T-G9RA6i6ZFObzlNpVlYrrk6nyQ=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\ZFFcPb0uwS9qyY6DaXoP4aFt0LncRo8lvJsU3c7lQ4U=.hash",
       "Source": "C:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\ShutUp.Client.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/ShutUp.Client.pdb.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\5QGZA2gLnQV54HvGIbYQDb8CDWWHzFRA8V_fDRGS8G8=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\FkvoR4GTcLkAfSVchdSCypwfk7aPvxPPi58nWKrXMsA=.hash",
       "Source": "C:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\unlinked\\ShutUp.Shared.pdb",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/_bin\/ShutUp.Shared.pdb.br"
     },
@@ -346,7 +351,7 @@
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.webassembly.js.br"
     },
     {
-      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\RHWkkarEWbbrF6a8-QMeUt-aLAJF_5FO20mauUk56bY=.hash",
+      "InputSource": "obj\\Debug\\netstandard2.1\\integrity\\PMakdRg7VqvvwscOns0lHgWwn8JGYgMk6y8a3NbX4ng=.hash",
       "Source": "C:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\obj\\Debug\\netstandard2.1\\blazor\\blazor.boot.json",
       "Target": "obj\\Debug\\netstandard2.1\\compressed\\_framework\/blazor.boot.json.br"
     }

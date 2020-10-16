@@ -50,6 +50,8 @@ obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.Forms.d
 obj\Debug\netstandard2.1\blazor\unlinked\System.ComponentModel.Annotations.dll
 obj\Debug\netstandard2.1\blazor\unlinked\System.ComponentModel.DataAnnotations.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.dll
+obj\Debug\netstandard2.1\blazor\unlinked\Blazored.LocalStorage.dll
+obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.JSInterop.dll
 obj\Debug\netstandard2.1\blazor\unlinked\ShutUp.Shared.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.AspNetCore.Components.WebAssembly.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Configuration.dll
@@ -59,7 +61,6 @@ obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.Configuration.File
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.FileProviders.Physical.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.FileSystemGlobbing.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.Extensions.FileProviders.Abstractions.dll
-obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.JSInterop.dll
 obj\Debug\netstandard2.1\blazor\unlinked\Microsoft.JSInterop.WebAssembly.dll
 obj\Debug\netstandard2.1\blazor\unlinked\ShutUp.Client.pdb
 obj\Debug\netstandard2.1\blazor\unlinked\ShutUp.Shared.pdb

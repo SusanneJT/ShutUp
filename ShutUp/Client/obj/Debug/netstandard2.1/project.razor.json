@@ -8,35 +8,68 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
-        "HashCode": -558235625,
+        "HashCode": 2036002474,
         "Kind": "Components.Component",
-        "Name": "ShutUp.Client.App",
+        "Name": "ShutUp.Client.Pages.Chat",
         "AssemblyName": "ShutUp.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "App"
+            "TagName": "Chat"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ShutUp.Client.App"
+          "Common.TypeName": "ShutUp.Client.Pages.Chat"
         }
       },
       {
-        "HashCode": 53769911,
+        "HashCode": 572757591,
         "Kind": "Components.Component",
-        "Name": "ShutUp.Client.App",
+        "Name": "ShutUp.Client.Pages.Chat",
         "AssemblyName": "ShutUp.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ShutUp.Client.App"
+            "TagName": "ShutUp.Client.Pages.Chat"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ShutUp.Client.App",
+          "Common.TypeName": "ShutUp.Client.Pages.Chat",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
+        "HashCode": -298478565,
+        "Kind": "Components.Component",
+        "Name": "ShutUp.Client.Pages.Index",
+        "AssemblyName": "ShutUp.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShutUp.Client.Pages.Index"
+        }
+      },
+      {
+        "HashCode": -80528986,
+        "Kind": "Components.Component",
+        "Name": "ShutUp.Client.Pages.Index",
+        "AssemblyName": "ShutUp.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ShutUp.Client.Pages.Index"
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShutUp.Client.Pages.Index",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -107,35 +140,35 @@
         }
       },
       {
-        "HashCode": -298478565,
+        "HashCode": -558235625,
         "Kind": "Components.Component",
-        "Name": "ShutUp.Client.Pages.Index",
+        "Name": "ShutUp.Client.App",
         "AssemblyName": "ShutUp.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Index"
+            "TagName": "App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ShutUp.Client.Pages.Index"
+          "Common.TypeName": "ShutUp.Client.App"
         }
       },
       {
-        "HashCode": -80528986,
+        "HashCode": 53769911,
         "Kind": "Components.Component",
-        "Name": "ShutUp.Client.Pages.Index",
+        "Name": "ShutUp.Client.App",
         "AssemblyName": "ShutUp.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ShutUp.Client.Pages.Index"
+            "TagName": "ShutUp.Client.App"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ShutUp.Client.Pages.Index",
+          "Common.TypeName": "ShutUp.Client.App",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -11804,6 +11837,11 @@
     {
       "FilePath": "c:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\Shared\\SurveyPrompt.razor",
       "TargetPath": "Shared\\SurveyPrompt.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\Pages\\Chat.razor",
+      "TargetPath": "Pages\\Chat.razor",
       "FileKind": "component"
     },
     {

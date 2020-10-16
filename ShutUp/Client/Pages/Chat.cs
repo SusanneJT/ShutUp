@@ -24,12 +24,11 @@ namespace ShutUp.Client.Pages
                 _messageState.Messages = await _messageApi.GetAllMessages();
 
             if (_messageState.Messages.Count() != 0)
-            {
                 loading = false;
-            }
+            
 
             hubConnection = new HubConnectionBuilder()
-                .WithUrl(NavigationManager.ToAbsoluteUri("/chathub"))
+                .WithUrl(_navigationManager.ToAbsoluteUri("/chathub"))
                 .Build();
 
             hubConnection.On<Message>("ReceiveMessage", (message) =>
