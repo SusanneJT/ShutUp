@@ -41,7 +41,7 @@ namespace ShutUp.Client.Pages
             _messageState.OnChange += StateHasChanged;
         }
 
-        Task Send()
+        public Task Send()
         {
             message = new Message();
             message.Name = userInput;
