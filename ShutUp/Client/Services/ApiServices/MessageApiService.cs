@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace ShutUp.Client.Services.ApiServices
 {
-    public class MessageApi
+    public class MessageApiService
     {
         private readonly HttpClient _httpClient;
 
-        public MessageApi(HttpClient httpClient)
+        public MessageApiService(HttpClient httpClient)
         {
             _httpClient = httpClient;
         }

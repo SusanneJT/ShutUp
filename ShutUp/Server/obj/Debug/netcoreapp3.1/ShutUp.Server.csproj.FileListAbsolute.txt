@@ -223,3 +223,5 @@ C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcor
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.SignalR.Protocols.Json.dll
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\System.Threading.Channels.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Blazored.LocalStorage.dll
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Server\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll

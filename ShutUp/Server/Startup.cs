@@ -27,6 +27,7 @@ namespace ShutUp.Server
 
             services.AddSignalR();
             services.AddScoped<IMessageRepository, MessageRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
             services.AddControllersWithViews();
             services.AddResponseCompression(opts =>
             {

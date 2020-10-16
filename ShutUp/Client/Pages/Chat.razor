@@ -2,10 +2,9 @@
 @using Microsoft.AspNetCore.SignalR.Client
 @using ShutUp.Client.Services.StateContainers
 @using ShutUp.Client.Services.ApiServices
-@inject NavigationManager NavigationManager
+@inject NavigationManager _navigationManager
 @inject MessageStateContainer _messageState
-@inject MessageApi _messageApi
-
+@inject MessageApiService _messageApi
 @implements IDisposable
 
 

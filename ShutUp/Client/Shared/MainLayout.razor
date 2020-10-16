@@ -1,15 +1,44 @@
 ﻿@inherits LayoutComponentBase
+@using ShutUp.Client.Services.StateContainers
+@using Newtonsoft.Json
+@inject UserStateContainer _userState
+@inject Blazored.LocalStorage.ILocalStorageService _localStore
+@using ShutUp.Shared
+@implements IDisposable
 
+
+@if (_userState.User.LoggedIn)
+{
 <div class="sidebar">
     <NavMenu />
 </div>
+}
 
 <div class="main">
-    <div class="top-row px-4">
-        <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
-    </div>
-
     <div class="content px-4">
         @Body
     </div>
 </div>
+
+@code {
+    public User user;
+
+    protected override async Task OnInitializedAsync()
+    {
+        user = await _localStore.GetItemAsync<User>("UserKey");
+
+        if(user != null)
+        {
+            user.LoggedIn = true;
+            _userState.SetProperty(user);
+            Dispose();
+            StateHasChanged();
+        }
+        _userState.OnChange += StateHasChanged;
+    }
+
+    public void Dispose()
+    {
+        _userState.OnChange -= StateHasChanged;
+    }
+}
