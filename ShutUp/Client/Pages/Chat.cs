@@ -13,7 +13,6 @@ namespace ShutUp.Client.Pages
 
         private HubConnection hubConnection;
         private Message message;
-        private string userInput;
         private string messageInput;
         private bool loading = true;
 
@@ -44,7 +43,7 @@ namespace ShutUp.Client.Pages
         public Task Send()
         {
             message = new Message();
-            message.Name = userInput;
+            message.User = _userState.User;
             message.MessageText = messageInput;
             message.Date = DateTime.Now;
             return hubConnection.SendAsync("SendMessage", message);

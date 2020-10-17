@@ -429,8 +429,8 @@ C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netsta
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Shared\NavMenu.razor.g.cs
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Shared\SurveyPrompt.razor.g.cs
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\UoI-5J51CEju4OSysdj_BHa_jiSd-2e5inHQjBHub90=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\FkvoR4GTcLkAfSVchdSCypwfk7aPvxPPi58nWKrXMsA=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\eelLrwvOqHhVuBHRBQ7FgnzujSRu0UxBxhqa3NB8eRc=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\MQ0QkQGVJAOkYRLiGtX8oT3oZ754a1mQnD4KkWHxU0o=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\tE93XHdJVKqX0aCouHb-vLvTrJmwypUDe4TPjmLk9Ts=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\IxzvZIE62GzxGNMCjr7VaQ5eACBL1Ew8HY9f8t8YyTo=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\MCWWyiEf7zF197ZuyuXVlgM109r0CCS6NKRR1hisXoc=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\6Yx2_gdKMpAk3mxcwp4GWK01D7mc5wXzQXQ2UuDE-IA=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\VYXIb2EfDWiSSUF4de_ihxwu02UndDKtd0FPztmEKGI=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\7ZeaDQ3FKN-uoZV_zqpD375kXAH37OXl3USCbSmE6xw=.hash

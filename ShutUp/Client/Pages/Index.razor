@@ -4,6 +4,8 @@
 @inject UserApiService _userApi
 @inject UserStateContainer _userState
 @inject Blazored.LocalStorage.ILocalStorageService _localStore
+@inject NavigationManager _navigationManager
+
 
 @if (_userState.User.LoggedIn)
 {

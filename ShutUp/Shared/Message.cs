@@ -6,7 +6,7 @@ namespace ShutUp.Shared
 {
     public class Message
     {
-        public string Name { get; set; }
+        public User User { get; set; }
         public string MessageText { get; set; }
         public int MessageId { get; set; }
         public DateTime Date { get; set; }
