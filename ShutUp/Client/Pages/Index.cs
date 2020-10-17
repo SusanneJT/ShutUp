@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace ShutUp.Client.Pages
 {
     public partial class Index
@@ -12,19 +13,20 @@ namespace ShutUp.Client.Pages
         public bool loading = true;
         public User user;
 
+        protected override async Task OnParametersSetAsync()
+        {
+            registeredUsers = await _userApi.GetAllRegisteredUsers();
+            if (registeredUsers != null)
+                loading = false;
+        }
+
         protected override async Task OnInitializedAsync()
         {
             if(_userState.User.LoggedIn)
             {
                 loading = false;
             }
-            else
-            {
-                registeredUsers = await _userApi.GetAllRegisteredUsers();
 
-                if (registeredUsers != null)
-                    loading = false;
-            }
             _userState.OnChange += StateHasChanged;
         }
 
@@ -34,8 +36,8 @@ namespace ShutUp.Client.Pages
             user.LoggedIn = true;
             _userState.SetProperty(user);
             await _localStore.SetItemAsync("UserKey", user);
+            _navigationManager.NavigateTo("/chat");
             Dispose();
-            StateHasChanged();
         }
 
         public void Dispose()

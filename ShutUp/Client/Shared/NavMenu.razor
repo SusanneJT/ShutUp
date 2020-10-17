@@ -2,8 +2,9 @@
 @inject MessageStateContainer MessageState
 @inject Blazored.LocalStorage.ILocalStorageService _localStore
 @inject UserStateContainer _userState
+@inject NavigationManager _navigationManager
 @using ShutUp.Shared
- 
+
 
 <div class="top-row pl-4 navbar navbar-dark">
     <a class="navbar-brand" href="">Shut Up!</a>
@@ -32,8 +33,7 @@
     </ul>
 </div>
 
-@code { 
-    private bool collapseNavMenu = true;
+@code { private bool collapseNavMenu = true;
     User newUser = new User();
 
     private string NavMenuCssClass => collapseNavMenu ? "collapse" : null;
@@ -53,12 +53,11 @@
         _userState.SetProperty(newUser);
         Console.WriteLine(_userState.User.Name + " : " + _userState.User.LoggedIn);
         await _localStore.RemoveItemAsync("UserKey");
+        _navigationManager.NavigateTo("/");
         Dispose();
-        StateHasChanged();
     }
 
     public void Dispose()
     {
         _userState.OnChange -= StateHasChanged;
-    }
-}
+    } }

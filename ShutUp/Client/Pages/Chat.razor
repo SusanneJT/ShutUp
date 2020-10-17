@@ -5,29 +5,24 @@
 @inject NavigationManager _navigationManager
 @inject MessageStateContainer _messageState
 @inject MessageApiService _messageApi
+@inject UserStateContainer _userState
 @implements IDisposable
 
 
 <h3>Chatt</h3>
 @if (loading)
 {
-    <p>Loading</p>
+    <p>Loading...</p>
 }
 else
 {
     <div class="form-group">
         <label>
-            User:
-            <input @bind="userInput" />
-        </label>
-    </div>
-    <div class="form-group">
-         <label>
             Message:
             <input @bind="messageInput" size="50" />
-         </label>
+        </label>
+        <button @onclick="Send" disabled="@(!IsConnected)">Send</button>
     </div>
-    <button @onclick="Send" disabled="@(!IsConnected)">Send</button>
 
     <hr>
 
@@ -35,7 +30,7 @@ else
         @foreach (var message in _messageState.Messages)
         {
             <li class="list-group-item">
-                @message.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
+                @message.User.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
                 @message.MessageText
             </li>
         }

@@ -12,9 +12,13 @@ namespace ShutUp.Server.Models
         public List<Message> Messages { get; set; } = new List<Message>();
         public IEnumerable<Message> GetMessages()
         {
-            Messages.Add(new Message { Name = "Urban", MessageText = "Hej!", MessageId = 1, Date = new DateTime(2020, 10, 15, 7, 0, 0) });
-            Messages.Add(new Message { Name = "Ulla", MessageText = "Hoj!", MessageId = 2, Date = new DateTime(2020, 10, 15, 7, 10, 0) });
+            User Uno = new User { Name = "Uno", LoggedIn = false, UserId = 1 };
+            User Vera = new User { Name = "Vera", LoggedIn = false, UserId = 2 };
+            //User Torbjorn = new User { Name = "Torbjörn", LoggedIn = false, UserId = 2 };
+            //User Gast = new User { Name = "Gäst", LoggedIn = false, UserId = 2 };
 
+            Messages.Add(new Message { User = Uno, MessageText = "Hoj!", MessageId = 1, Date = new DateTime(2020, 10, 15, 7, 10, 0) });
+            Messages.Add(new Message { User = Vera, MessageText = "Hoppla!", MessageId = 2, Date = new DateTime(2020, 10, 16, 7, 10, 0) });
             return Messages;
         }
 
