@@ -14,6 +14,7 @@ namespace ShutUp.Client.Pages
         private HubConnection hubConnection;
         private Message message;
         private string messageInput;
+        private string subMessageInput;
         private bool loading = true;
 
         protected override async Task OnInitializedAsync()
@@ -36,6 +37,16 @@ namespace ShutUp.Client.Pages
                 StateHasChanged();
             });
 
+            hubConnection.On<SubMessage>("ReceiveSubMessage", (subMessage) =>
+            {
+                //Hitta rätt id, lägg till submessage till rätt meddelande
+                Message findMessage = _messageState.Messages.Find(x => subMessage.MessageId == x.MessageId);
+                if (findMessage.SubMessages == null)
+                    findMessage.SubMessages = new List<SubMessage>();
+                findMessage.SubMessages.Add(subMessage);
+                StateHasChanged();
+            });
+
             await hubConnection.StartAsync();
             _messageState.OnChange += StateHasChanged;
         }
@@ -46,7 +57,18 @@ namespace ShutUp.Client.Pages
             message.User = _userState.User;
             message.MessageText = messageInput;
             message.Date = DateTime.Now;
+            messageInput = "";
             return hubConnection.SendAsync("SendMessage", message);
+        }
+        public Task Send(int id)
+        {
+            SubMessage subMessage = new SubMessage();
+            subMessage.User = _userState.User;
+            subMessage.MessageText = subMessageInput;
+            subMessage.MessageId = id;
+            subMessage.Date = DateTime.Now;
+            subMessageInput = "";
+            return hubConnection.SendAsync("SendSubMessage", subMessage);
         }
 
 
