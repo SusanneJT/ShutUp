@@ -4,13 +4,12 @@ using System.Text;
 
 namespace ShutUp.Shared
 {
-    public class Message
+    public class SubMessage
     {
         public User User { get; set; }
         public string MessageText { get; set; }
         public int MessageId { get; set; }
-        public List<SubMessage> SubMessages { get; set; }
+        public int SubMessageId { get; set; }
         public DateTime Date { get; set; }
-
     }
 }

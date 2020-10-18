@@ -14,17 +14,26 @@ namespace ShutUp.Server.Models
         {
             User Uno = new User { Name = "Uno", LoggedIn = false, UserId = 1 };
             User Vera = new User { Name = "Vera", LoggedIn = false, UserId = 2 };
-            //User Torbjorn = new User { Name = "Torbjörn", LoggedIn = false, UserId = 2 };
+            User Torbjorn = new User { Name = "Torbjörn", LoggedIn = false, UserId = 2 };
             //User Gast = new User { Name = "Gäst", LoggedIn = false, UserId = 2 };
 
-            Messages.Add(new Message { User = Uno, MessageText = "Hoj!", MessageId = 1, Date = new DateTime(2020, 10, 15, 7, 10, 0) });
-            Messages.Add(new Message { User = Vera, MessageText = "Hoppla!", MessageId = 2, Date = new DateTime(2020, 10, 16, 7, 10, 0) });
+            //Message subMessage = new Message { User = Vera, MessageText = "Hoppla!", MessageId = 2, Date = new DateTime(2020, 10, 16, 7, 10, 0) };
+            List<SubMessage> subMessages1 = new List<SubMessage>();
+            SubMessage subMessage1 = new SubMessage { User = Torbjorn, MessageText = "Hej Uno!!", MessageId = 1, Date = new DateTime(2020, 10, 17, 7, 10, 0), SubMessageId = 1 };
+            subMessages1.Add(subMessage1);
+
+            Messages.Add(new Message { User = Uno, MessageText = "Hoj!", MessageId = 1, Date = new DateTime(2020, 10, 15, 7, 10, 0), SubMessages = subMessages1 });
+            Messages.Add(new Message { User = Vera, MessageText = "Hoppla!", MessageId = 2, Date = new DateTime(2020, 10, 16, 7, 10, 0), SubMessages = new List<SubMessage>() });
             return Messages;
         }
 
         public void NewMessage(Message message)
         {
             Messages.Add(message);
+        }
+        public void NewMessage(SubMessage subMessage)
+        {
+            //Messages.Add(message);
         }
     }
 }

@@ -8,8 +8,6 @@
 @inject UserStateContainer _userState
 @implements IDisposable
 
-
-<h3>Chatt</h3>
 @if (loading)
 {
     <p>Loading...</p>
@@ -18,8 +16,7 @@ else
 {
     <div class="form-group">
         <label>
-            Message:
-            <input @bind="messageInput" size="50" />
+            Meddelande: <input @bind="messageInput" size="50" />
         </label>
         <button @onclick="Send" disabled="@(!IsConnected)">Send</button>
     </div>
@@ -29,10 +26,32 @@ else
     <ul id="messagesList" class="list-group">
         @foreach (var message in _messageState.Messages)
         {
-            <li class="list-group-item">
-                @message.User.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
-                @message.MessageText
-            </li>
+        <li class="list-group-item">
+            @message.User.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
+            @message.MessageText
+
+            @if (message.SubMessages != null)
+            {
+                <br />
+                <ul class="list-group">
+                    @foreach (var subMessage in message.SubMessages)
+                    {
+                        <li class="list-group-item">
+                            @subMessage.User.Name <i class="small">@subMessage.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
+                            @subMessage.MessageText
+                        </li>
+                    }
+                </ul>
+            }
+        <div class="form-group">
+            <br />
+            <label>
+                Svara:
+                <input @bind="subMessageInput" size="50" />
+            </label>
+            <button @onclick="@(e => Send(message.MessageId))" disabled="@(!IsConnected)">Send</button>
+        </div>
+        </li>
         }
     </ul>
 }
