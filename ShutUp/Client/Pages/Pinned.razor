@@ -1,0 +1,55 @@
+﻿@page "/pinned"
+@using Microsoft.AspNetCore.SignalR.Client
+@using ShutUp.Client.Services.StateContainers
+@using ShutUp.Client.Services.ApiServices
+@inject NavigationManager _navigationManager
+@inject MessageStateContainer _messageState
+@inject MessageApiService _messageApi
+@inject UserStateContainer _userState
+@implements IDisposable
+
+<h3>Pinned</h3>
+
+@if (loading)
+{
+    <p>Loading...</p>
+}
+else
+{
+
+    <ul id="messagesList" class="list-group">
+        @foreach (var message in _messageState.Messages)
+        {
+            @if(message.Pinned)
+            {
+                <li class="list-group-item">
+                    @message.User.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
+                    @message.MessageText
+
+                    @if (message.SubMessages != null)
+                    {
+                        <br />
+                        <ul class="list-group">
+                            @foreach (var subMessage in message.SubMessages)
+                            {
+                                <li class="list-group-item">
+                                    @subMessage.User.Name <i class="small">@subMessage.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
+                                    @subMessage.MessageText
+                                </li>
+                            }
+                        </ul>
+                    }
+                    <div class="form-group">
+                        <br />
+                        <label>
+                            Svara:
+                            <input @bind="subMessageInput" size="50" />
+                        </label>
+                        <button @onclick="@(e => Send(message.MessageId))" disabled="@(!IsConnected)">Send</button>
+                    </div>
+                </li>
+            }
+            
+         }
+    </ul>
+}

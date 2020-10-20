@@ -36,7 +36,7 @@ namespace ShutUp.Client.Pages
             user.LoggedIn = true;
             _userState.SetProperty(user);
             await _localStore.SetItemAsync("UserKey", user);
-            _navigationManager.NavigateTo("/chat");
+            _navigationManager.NavigateTo("/pinned");
             Dispose();
         }
 

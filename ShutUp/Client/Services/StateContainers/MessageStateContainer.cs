@@ -18,6 +18,12 @@ namespace ShutUp.Client.Services.StateContainers
             NotifyStateChanged();
         }
 
+        public void ChangeProperty(Message message)
+        {
+            Messages.FirstOrDefault(x => message.MessageId == x.MessageId).Pinned = message.Pinned;
+            NotifyStateChanged();
+        }
+
         private void NotifyStateChanged() => OnChange?.Invoke();
     }
 }
