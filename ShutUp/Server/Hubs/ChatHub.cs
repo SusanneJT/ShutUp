@@ -27,5 +27,10 @@ namespace ShutUp.Server.Hubs
             _messageRepository.NewMessage(subMessage);
             await Clients.All.SendAsync("ReceiveSubMessage", subMessage);
         }
+        public async Task ChangeMessage(Message message)
+        {
+            _messageRepository.ChangeMessage(message);
+            await Clients.All.SendAsync("ReceiveChangedMessage", message);
+        }
     }
 }

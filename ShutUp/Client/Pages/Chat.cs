@@ -4,18 +4,25 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.SignalR.Client;
 using ShutUp.Shared;
+using ShutUp.Client.Components;
+using Microsoft.AspNetCore.Components;
 
 
 namespace ShutUp.Client.Pages
 {
     public partial class Chat
     {
-
+        private EditMessageModal editMessageModal { get; set; } = new EditMessageModal();
         private HubConnection hubConnection;
-        private Message message;
+        private Message Message = new Message();
         private string messageInput;
+        private bool pinned;
         private string subMessageInput;
         private bool loading = true;
+        private string liClass;
+        private string classes = "list-group-item";
+        private string classesPinned = "list-group-item list-group-item-danger";
+
 
         protected override async Task OnInitializedAsync()
         {
@@ -39,11 +46,16 @@ namespace ShutUp.Client.Pages
 
             hubConnection.On<SubMessage>("ReceiveSubMessage", (subMessage) =>
             {
-                //Hitta rätt id, lägg till submessage till rätt meddelande
                 Message findMessage = _messageState.Messages.Find(x => subMessage.MessageId == x.MessageId);
                 if (findMessage.SubMessages == null)
                     findMessage.SubMessages = new List<SubMessage>();
                 findMessage.SubMessages.Add(subMessage);
+                StateHasChanged();
+            });
+
+            hubConnection.On<Message>("ReceiveChangedMessage", (message) =>
+            {
+                _messageState.ChangeProperty(message);
                 StateHasChanged();
             });
 
@@ -53,12 +65,10 @@ namespace ShutUp.Client.Pages
 
         public Task Send()
         {
-            message = new Message();
-            message.User = _userState.User;
-            message.MessageText = messageInput;
-            message.Date = DateTime.Now;
-            messageInput = "";
-            return hubConnection.SendAsync("SendMessage", message);
+            Message.User = _userState.User;
+            Message.Date = DateTime.Now;
+            Message.MessageId = _messageState.Messages.Count + 1;
+            return hubConnection.SendAsync("SendMessage", Message);
         }
         public Task Send(int id)
         {
@@ -69,6 +79,16 @@ namespace ShutUp.Client.Pages
             subMessage.Date = DateTime.Now;
             subMessageInput = "";
             return hubConnection.SendAsync("SendSubMessage", subMessage);
+        }
+
+        public void Edit(Message message)
+        {
+            editMessageModal.Show(message);
+        }
+
+        public async Task EditMessageModalClose(Message message)
+        {
+            await hubConnection.SendAsync("ChangeMessage", message);
         }
 
 

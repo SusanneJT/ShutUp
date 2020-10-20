@@ -80,6 +80,13 @@ using ShutUp.Client.Services;
 #line hidden
 #nullable disable
 #nullable restore
+#line 11 "C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\_Imports.razor"
+using ShutUp.Client.Components;
+
+#line default
+#line hidden
+#nullable disable
+#nullable restore
 #line 2 "C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\Pages\Index.razor"
 using ShutUp.Client.Services.ApiServices;
 

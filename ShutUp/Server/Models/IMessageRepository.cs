@@ -11,5 +11,6 @@ namespace ShutUp.Server.Models
         IEnumerable<Message> GetMessages();
         void NewMessage(Message message);
         void NewMessage(SubMessage subMessage);
+        void ChangeMessage(Message message);
     }
 }

@@ -14,46 +14,60 @@
 }
 else
 {
-    <div class="form-group">
-        <label>
-            Meddelande: <input @bind="messageInput" size="50" />
-        </label>
-        <button @onclick="Send" disabled="@(!IsConnected)">Send</button>
-    </div>
-
+    <EditForm Model="@Message" OnValidSubmit="@Send">
+        <div class="form-group">
+            <label>
+                Meddelande: <InputText @bind-Value="@Message.MessageText" size="50" />
+            </label>
+            <InputCheckbox type="checkbox" id="pinned" name="pinnedCheck" @bind-Value="@Message.Pinned" />
+            <button type="submit" disabled="@(!IsConnected)">Send</button>
+        </div>
+    </EditForm>
     <hr>
 
     <ul id="messagesList" class="list-group">
         @foreach (var message in _messageState.Messages)
         {
-        <li class="list-group-item">
-            @message.User.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
-            @message.MessageText
-
-            @if (message.SubMessages != null)
+            @if (message.Pinned)
             {
-                <br />
-                <ul class="list-group">
-                    @foreach (var subMessage in message.SubMessages)
-                    {
-                        <li class="list-group-item">
-                            @subMessage.User.Name <i class="small">@subMessage.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
-                            @subMessage.MessageText
-                        </li>
-                    }
-                </ul>
+                liClass = classesPinned;
             }
-        <div class="form-group">
-            <br />
-            <label>
-                Svara:
-                <input @bind="subMessageInput" size="50" />
-            </label>
-            <button @onclick="@(e => Send(message.MessageId))" disabled="@(!IsConnected)">Send</button>
-        </div>
-        </li>
+            else
+            {
+                liClass = classes;
+            }
+
+            <li class=@liClass>
+                @message.User.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
+                @message.MessageText
+
+                @if (message.SubMessages != null)
+                {
+                    <br />
+                    <ul class="list-group">
+                        @foreach (var subMessage in message.SubMessages)
+                        {
+                            <li class="list-group-item">
+                                @subMessage.User.Name <i class="small">@subMessage.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
+                                @subMessage.MessageText
+                            </li>
+                        }
+                    </ul>
+                }
+                <div class="form-group">
+                    <br />
+                    <label>
+                        Svara:
+                        <input @bind="subMessageInput" size="50" />
+                    </label>
+                    <button @onclick="@(e => Send(message.MessageId))" disabled="@(!IsConnected)">Send</button>
+                </div>
+                <i @onclick="@(e => Edit(message))" class="oi oi-pencil"> Edit pinned status</i>
+            </li>
+      
         }
     </ul>
+    <EditMessageModal @ref="@editMessageModal"  CloseEventCallback="@EditMessageModalClose" ></EditMessageModal>
 }
 
 

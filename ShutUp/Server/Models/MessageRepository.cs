@@ -22,8 +22,9 @@ namespace ShutUp.Server.Models
             SubMessage subMessage1 = new SubMessage { User = Torbjorn, MessageText = "Hej Uno!!", MessageId = 1, Date = new DateTime(2020, 10, 17, 7, 10, 0), SubMessageId = 1 };
             subMessages1.Add(subMessage1);
 
-            Messages.Add(new Message { User = Uno, MessageText = "Hoj!", MessageId = 1, Date = new DateTime(2020, 10, 15, 7, 10, 0), SubMessages = subMessages1 });
-            Messages.Add(new Message { User = Vera, MessageText = "Hoppla!", MessageId = 2, Date = new DateTime(2020, 10, 16, 7, 10, 0), SubMessages = new List<SubMessage>() });
+            Messages.Add(new Message { User = Uno, MessageText = "Hoj!", MessageId = 1, Date = new DateTime(2020, 10, 15, 7, 10, 0), SubMessages = subMessages1, Pinned = false });
+            Messages.Add(new Message { User = Vera, MessageText = "Hoppla!", MessageId = 2, Date = new DateTime(2020, 10, 16, 7, 10, 0), Pinned = false });
+            Messages.Add(new Message { User = Torbjorn, MessageText = "Holl koll på larmen!", MessageId = 3, Date = new DateTime(2020, 10, 18, 7, 10, 0), Pinned = true });
             return Messages;
         }
 
@@ -34,6 +35,11 @@ namespace ShutUp.Server.Models
         public void NewMessage(SubMessage subMessage)
         {
             //Messages.Add(message);
+        }
+
+        public void ChangeMessage(Message message)
+        {
+            //Change message where id = message.id
         }
     }
 }

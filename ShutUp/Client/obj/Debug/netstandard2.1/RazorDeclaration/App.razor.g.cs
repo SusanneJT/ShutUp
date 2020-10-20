@@ -83,6 +83,13 @@ using ShutUp.Client.Services;
 #line default
 #line hidden
 #nullable disable
+#nullable restore
+#line 11 "C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\_Imports.razor"
+using ShutUp.Client.Components;
+
+#line default
+#line hidden
+#nullable disable
     public partial class App : Microsoft.AspNetCore.Components.ComponentBase
     {
         #pragma warning disable 1998

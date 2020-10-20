@@ -20,14 +20,14 @@
     </div>
 </div>
 
-@code {
+@code { 
     public User user;
 
     protected override async Task OnInitializedAsync()
     {
         user = await _localStore.GetItemAsync<User>("UserKey");
 
-        if(user != null)
+        if (user != null)
         {
             user.LoggedIn = true;
             _userState.SetProperty(user);
@@ -40,5 +40,5 @@
     public void Dispose()
     {
         _userState.OnChange -= StateHasChanged;
-    }
+    } 
 }

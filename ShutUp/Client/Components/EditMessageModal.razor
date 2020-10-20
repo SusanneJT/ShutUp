@@ -1,0 +1,23 @@
+﻿@if (ShowModal)
+{
+    <div class="modal fade show d-block p-3" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog p-3" role="document">
+            <div class="modal-content p-3">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="titleLabel">Change pinned status</h5>
+                    <button type="button" class="close" @onclick="@Close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <EditForm Model="@Message" OnValidSubmit="@Close">
+                    <div class="form-group p-3">
+                        <label>
+                            Pinned status: <InputCheckbox type="checkbox" id="pinned" name="pinnedCheck" @bind-Value="@Message.Pinned" />
+                        </label>
+                        <button type="submit">Change</button>
+                    </div>
+                </EditForm>
+            </div>
+        </div>
+    </div>
+}
