@@ -8,6 +8,7 @@ namespace ShutUp.Shared
     {
         public string Name { get; set; }
         public bool LoggedIn { get; set; }
-        public int UserId { get; set; } 
+        public int UserId { get; set; }
+        public string Avatar { get; set; }
     }
 }

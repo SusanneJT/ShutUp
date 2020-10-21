@@ -1,0 +1,63 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto&display=swap');
+
+.container-login {
+    width: 50%;
+}
+
+.navbar-block {
+    background-color: darkslategrey !important;
+
+}
+
+.sidebar {
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(47,79,79,1) 65%) !important;
+}
+
+.top-row {
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+.shut-up {
+    font-family: 'Reenie Beanie', cursive;
+    transform: rotate(-5deg);
+}
+
+
+h1, shut-up {
+    font-size: 12vw;
+    color: darkslategrey;
+}
+
+h2, shut-up {
+    font-size: 3.8rem;
+    color: white;
+}
+
+
+.roboto {
+    font-family: 'Roboto', sans-serif;
+}
+
+a, .roboto {
+    color: darkslategrey;
+}
+
+.user-box:hover {
+    opacity: 0.7;
+}
+
+.user-box a:hover {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+    .container-login {
+        width: 100%;
+    }
+}
+
+

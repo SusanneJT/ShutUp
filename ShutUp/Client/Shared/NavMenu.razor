@@ -6,8 +6,8 @@
 @using ShutUp.Shared
 
 
-<div class="top-row pl-4 navbar navbar-dark">
-    <a class="navbar-brand" href="">Shut Up!</a>
+<div class="top-row pl-4 navbar navbar-dark navbar-block">
+    <h2 class="shut-up mt-1">Shut Up!</h2>
     <button class="navbar-toggler" @onclick="ToggleNavMenu">
         <span class="navbar-toggler-icon"></span>
     </button>
@@ -16,18 +16,18 @@
 <div class="@NavMenuCssClass" @onclick="ToggleNavMenu">
     <ul class="nav flex-column">
         <li class="nav-item px-3">
-            <NavLink class="nav-link" href="" Match="NavLinkMatch.All">
-                <span class="oi oi-home" aria-hidden="true"></span> Home
-            </NavLink>
-        </li>
-        <li class="nav-item px-3">
             <NavLink class="nav-link" href="chat">
-                <span class="oi oi-chat" aria-hidden="true"></span> Chat (@MessageState.Messages.Count)
+                <span class="oi oi-chat" aria-hidden="true"></span> Chatt (@MessageState.Messages.Count)
             </NavLink>
         </li>
         <li class="nav-item px-3">
             <NavLink class="nav-link" href="pinned">
-                <span class="oi oi-chat" aria-hidden="true"></span> Pinned
+                <span class="oi oi-bullhorn" aria-hidden="true"></span> Viktigt
+            </NavLink>
+        </li>
+        <li class="nav-item px-3">
+            <NavLink class="nav-link" href="#">
+                <span class="oi oi-warning" aria-hidden="true"></span> Alarm
             </NavLink>
         </li>
         <li class="nav-item px-3">

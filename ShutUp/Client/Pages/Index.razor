@@ -20,19 +20,23 @@ else
     }
     else
     {
-        <br />
-        <h6>Välj en användare att logga in med:</h6>
-        <hr />
-        <ul id="messagesList" class="list-group">
-            @foreach (var user in registeredUsers)
-            {
-                <li class="list-group-item">
-                    <a href="" @onclick="@(e => SelectUser(user.UserId))" @onclick:preventDefault>
-                        @user.Name
-                    </a>
-                </li>
-            }
-        </ul>
+
+        <h1 class="text-center shut-up">Shut up!</h1>
+        <div class="container container-login">
+            <hr />
+            <div class="row justify-content-md-center">
+                @foreach (var user in registeredUsers)
+                {
+                    <div class="col-sm-3 text-center m-2 user-box">
+                        <a href="" @onclick="@(e => SelectUser(user.UserId))" @onclick:preventDefault>
+                            <img src="/img/@user.Avatar" class="rounded" alt="staff image" width="135" />
+                            <p class="text-center roboto">@user.Name</p>
+                        </a>
+                    </div>
+                }
+            </div>
+        </div>
+
     }
 }
 
