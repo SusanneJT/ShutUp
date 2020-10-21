@@ -8,6 +8,61 @@
   "ProjectWorkspaceState": {
     "TagHelpers": [
       {
+        "HashCode": 317120341,
+        "Kind": "Components.Component",
+        "Name": "ShutUp.Client.Components.EditMessageModal",
+        "AssemblyName": "ShutUp.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "EditMessageModal"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CloseEventCallback",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<ShutUp.Shared.Message>",
+            "Metadata": {
+              "Common.PropertyName": "CloseEventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShutUp.Client.Components.EditMessageModal"
+        }
+      },
+      {
+        "HashCode": -1230261183,
+        "Kind": "Components.Component",
+        "Name": "ShutUp.Client.Components.EditMessageModal",
+        "AssemblyName": "ShutUp.Client",
+        "CaseSensitive": true,
+        "TagMatchingRules": [
+          {
+            "TagName": "ShutUp.Client.Components.EditMessageModal"
+          }
+        ],
+        "BoundAttributes": [
+          {
+            "Kind": "Components.Component",
+            "Name": "CloseEventCallback",
+            "TypeName": "Microsoft.AspNetCore.Components.EventCallback<ShutUp.Shared.Message>",
+            "Metadata": {
+              "Common.PropertyName": "CloseEventCallback",
+              "Components.EventCallback": "True"
+            }
+          }
+        ],
+        "Metadata": {
+          "Runtime.Name": "Components.IComponent",
+          "Common.TypeName": "ShutUp.Client.Components.EditMessageModal",
+          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
+        }
+      },
+      {
         "HashCode": 2036002474,
         "Kind": "Components.Component",
         "Name": "ShutUp.Client.Pages.Chat",
@@ -74,68 +129,35 @@
         }
       },
       {
-        "HashCode": 466115928,
+        "HashCode": 849478159,
         "Kind": "Components.Component",
-        "Name": "ShutUp.Client.Pages.Counter",
+        "Name": "ShutUp.Client.Pages.Pinned",
         "AssemblyName": "ShutUp.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "Counter"
+            "TagName": "Pinned"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ShutUp.Client.Pages.Counter"
+          "Common.TypeName": "ShutUp.Client.Pages.Pinned"
         }
       },
       {
-        "HashCode": -1610598809,
+        "HashCode": -465096077,
         "Kind": "Components.Component",
-        "Name": "ShutUp.Client.Pages.Counter",
+        "Name": "ShutUp.Client.Pages.Pinned",
         "AssemblyName": "ShutUp.Client",
         "CaseSensitive": true,
         "TagMatchingRules": [
           {
-            "TagName": "ShutUp.Client.Pages.Counter"
+            "TagName": "ShutUp.Client.Pages.Pinned"
           }
         ],
         "Metadata": {
           "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ShutUp.Client.Pages.Counter",
-          "Components.NameMatch": "Components.FullyQualifiedNameMatch"
-        }
-      },
-      {
-        "HashCode": -188510474,
-        "Kind": "Components.Component",
-        "Name": "ShutUp.Client.Pages.FetchData",
-        "AssemblyName": "ShutUp.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ShutUp.Client.Pages.FetchData"
-        }
-      },
-      {
-        "HashCode": -1062244095,
-        "Kind": "Components.Component",
-        "Name": "ShutUp.Client.Pages.FetchData",
-        "AssemblyName": "ShutUp.Client",
-        "CaseSensitive": true,
-        "TagMatchingRules": [
-          {
-            "TagName": "ShutUp.Client.Pages.FetchData"
-          }
-        ],
-        "Metadata": {
-          "Runtime.Name": "Components.IComponent",
-          "Common.TypeName": "ShutUp.Client.Pages.FetchData",
+          "Common.TypeName": "ShutUp.Client.Pages.Pinned",
           "Components.NameMatch": "Components.FullyQualifiedNameMatch"
         }
       },
@@ -11815,11 +11837,6 @@
   "RootNamespace": "ShutUp.Client",
   "Documents": [
     {
-      "FilePath": "c:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\Pages\\FetchData.razor",
-      "TargetPath": "Pages\\FetchData.razor",
-      "FileKind": "component"
-    },
-    {
       "FilePath": "c:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\Pages\\Index.razor",
       "TargetPath": "Pages\\Index.razor",
       "FileKind": "component"
@@ -11830,8 +11847,8 @@
       "FileKind": "component"
     },
     {
-      "FilePath": "c:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\Pages\\Counter.razor",
-      "TargetPath": "Pages\\Counter.razor",
+      "FilePath": "c:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\Pages\\Pinned.razor",
+      "TargetPath": "Pages\\Pinned.razor",
       "FileKind": "component"
     },
     {
@@ -11842,6 +11859,11 @@
     {
       "FilePath": "c:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\Pages\\Chat.razor",
       "TargetPath": "Pages\\Chat.razor",
+      "FileKind": "component"
+    },
+    {
+      "FilePath": "c:\\Users\\admin\\Desktop\\ShutUp\\Meddelandecentralen\\ShutUp\\Client\\Components\\EditMessageModal.razor",
+      "TargetPath": "Components\\EditMessageModal.razor",
       "FileKind": "component"
     },
     {
