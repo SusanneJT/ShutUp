@@ -435,6 +435,12 @@ C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netsta
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Components\EditMessageModal.razor.g.cs
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\ic51YWYuTYzPDnh8JS_hGbcdnMgsxPro1SfY1HM4HKM=.hash
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\ZmblDveCGkN9Mp-z9tiCnP13BVcUrO8zk4C5uKQnISQ=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\ZN6KU386m3VpvyyRybBVDe_vQqNEJU9EStJRZIcPsGs=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\e3FQ5QT5A7QA62wxSunL6Xkpf8hwiBhP71493sHtXGI=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\I1sdQ8pBEdSkXyczM1P6qIbUTYEuVheKTDJt4BQb5sw=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\RazorDeclaration\Components\WriteMessageBar.razor.g.cs
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Components\WriteMessageBar.razor.g.cs
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\RazorDeclaration\Components\AnswerMessage.razor.g.cs
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Components\AnswerMessage.razor.g.cs
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\RazorDeclaration\Components\ListSubMessages.razor.g.cs
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Components\ListSubMessages.razor.g.cs
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\1eQ4YmFMNAm-ZwehQ03aZVwA59MYCBmZ61VtUp-DWyo=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\K4pTJa23vfq4GQaOG_BryBxFAI1SXrmh7s7wxn_uOEg=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\j2Nf8beITPmm-FJEcAckXgc7DwSBP3LgaKlDsRFjyjo=.hash

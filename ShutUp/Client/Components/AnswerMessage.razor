@@ -1,0 +1,56 @@
+﻿@using ShutUp.Shared
+@using Microsoft.AspNetCore.Components
+
+@if (!showForm)
+{
+    <button class="btn btn-sm btn-chat" @onclick="@ShowForm">Skriv ett svar</button>
+}
+else
+{
+<EditForm Model="@subMessage" class="col ml-5">
+    <InputTextArea class="text-box rounded" placeholder="Vad vill du svara?" @bind-Value="@subMessage.MessageText" />
+    <button class="btn btn-chat" @onclick="@(e => Send(subMessage))">Skicka</button>
+    <button class="btn btn-sm" @onclick="@Undo">Ångra</button>
+</EditForm>
+}
+
+
+
+
+
+@code { 
+    [Parameter]
+    public EventCallback<SubMessage> CloseEventCallback { get; set; }
+
+    [CascadingParameter(Name = "MessageId")]
+    private int MessageId { get; set; }
+
+    public SubMessage subMessage { get; set; } = new SubMessage();
+
+    public bool showForm;
+
+    protected override async Task OnInitializedAsync()
+    {
+        showForm = false;
+    }
+
+    public async Task Send(SubMessage subMessage)
+    {
+        subMessage.MessageId = MessageId;
+        await CloseEventCallback.InvokeAsync(subMessage);
+        subMessage.MessageText = "";
+        showForm = false;
+        StateHasChanged();
+    }
+    public void ShowForm()
+    {
+        showForm = true;
+        StateHasChanged();
+    }
+    public void Undo()
+    {
+        subMessage.MessageText = "";
+        showForm = false;
+        StateHasChanged();
+    }
+}
