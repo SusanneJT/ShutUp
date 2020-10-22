@@ -1,0 +1,14 @@
+﻿@using ShutUp.Shared
+
+<li class="list-group-item ml-5">
+    <div class="mb-2">
+        <img src="/img/@subMessage.User.Avatar" class="rounded" alt="staff image" width="30" />
+        @subMessage.User.Name <i class="small">@subMessage.Date.ToString("yyyy-MM-dd HH:mm")</i>
+    </div>
+    @subMessage.MessageText
+</li>
+
+@code {
+    [Parameter]
+    public SubMessage subMessage { get; set; }
+}

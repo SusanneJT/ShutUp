@@ -1,0 +1,31 @@
+﻿@using ShutUp.Shared
+
+<div class="Write-message-box container rounded roboto bg-white border">
+    <EditForm Model="@Message" OnValidSubmit="@Send">
+        <div class="form-group">
+            <InputTextArea class="text-box rounded" placeholder="Vad har du på hjärtat?" @bind-Value="@Message.MessageText" />
+            <div class="row">
+                <div class="col-4">
+                    <i class="">Markera som viktigt </i><InputCheckbox type="checkbox" id="pinned" name="pinnedCheck" @bind-Value="@Message.Pinned" />
+                </div>
+                <div class="col-8">
+                    <button type="submit" class="btn btn-chat btn-block">Skicka</button>
+                </div>
+            </div>
+        </div>
+    </EditForm>
+</div>
+
+@code {
+    [Parameter]
+    public EventCallback<Message> CloseEventCallback { get; set; }
+
+    private Message Message = new Message();
+
+    public async Task Send()
+    {
+        await CloseEventCallback.InvokeAsync(Message);
+        Message.MessageText = "";
+        StateHasChanged();
+    }
+}

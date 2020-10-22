@@ -13,15 +13,20 @@ namespace ShutUp.Client.Pages
     public partial class Chat
     {
         private EditMessageModal editMessageModal { get; set; } = new EditMessageModal();
+        private WriteMessageBar writeMessageBar { get; set; } = new WriteMessageBar();
+        private AnswerMessage answerMessage { get; set; } = new AnswerMessage();
+        private ListSubMessages listSubMessages { get; set; } = new ListSubMessages();
+
         private HubConnection hubConnection;
-        private Message Message = new Message();
         private string messageInput;
         private bool pinned;
-        private string subMessageInput;
+
+        SubMessage subMessage = new SubMessage();
+
         private bool loading = true;
         private string liClass;
-        private string classes = "list-group-item";
-        private string classesPinned = "list-group-item list-group-item-danger";
+        private string classes = "list-group-item border";
+        private string classesPinned = "list-group-item border border-danger";
 
 
         protected override async Task OnInitializedAsync()
@@ -63,27 +68,32 @@ namespace ShutUp.Client.Pages
             _messageState.OnChange += StateHasChanged;
         }
 
-        public Task Send()
+        public Task Send(Message message)
         {
-            Message.User = _userState.User;
-            Message.Date = DateTime.Now;
-            Message.MessageId = _messageState.Messages.Count + 1;
-            return hubConnection.SendAsync("SendMessage", Message);
+            message.User = _userState.User;
+            message.Date = DateTime.Now;
+            message.MessageId = _messageState.Messages.Count + 1;
+            return hubConnection.SendAsync("SendMessage", message);
         }
-        public Task Send(int id)
+        public Task SendSubMessage(SubMessage subMessage)
         {
-            SubMessage subMessage = new SubMessage();
+            //SubMessage subMessage = new SubMessage();
             subMessage.User = _userState.User;
-            subMessage.MessageText = subMessageInput;
-            subMessage.MessageId = id;
+            //subMessage.MessageId = id;
             subMessage.Date = DateTime.Now;
-            subMessageInput = "";
+            //subMessageInput = "";
             return hubConnection.SendAsync("SendSubMessage", subMessage);
         }
 
-        public void Edit(Message message)
+        public async void Edit(Message message)
         {
-            editMessageModal.Show(message);
+            //editMessageModal.Show(message);
+            if (message.Pinned)
+                message.Pinned = false;
+            else
+                message.Pinned = true;
+
+            await hubConnection.SendAsync("ChangeMessage", message);
         }
 
         public async Task EditMessageModalClose(Message message)

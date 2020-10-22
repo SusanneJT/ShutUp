@@ -1,9 +1,6 @@
 ﻿@import url('https://fonts.googleapis.com/css2?family=Reenie+Beanie&family=Roboto&display=swap');
 
-.container-login {
-    width: 50%;
-}
-
+/*Nav bar*/
 .navbar-block {
     background-color: darkslategrey !important;
 
@@ -20,6 +17,7 @@
     align-items: center;
 }
 
+/*Font*/
 .shut-up {
     font-family: 'Reenie Beanie', cursive;
     transform: rotate(-5deg);
@@ -45,6 +43,13 @@ a, .roboto {
     color: darkslategrey;
 }
 
+
+
+/*Login-page*/
+.container-login {
+    width: 50%;
+}
+
 .user-box:hover {
     opacity: 0.7;
 }
@@ -54,9 +59,41 @@ a, .roboto {
     font-weight: 600;
 }
 
+
+
+/*Chat-page*/
+.Write-message-box {
+
+    position: sticky;
+    bottom: 0%;
+    padding: 2% 2% 1% 2%;
+}
+
+.text-box {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.btn-chat {
+    color: #fff;
+    background-color: #3b5d5d;
+    border-color: black;
+}
+    .btn-chat:hover {
+        color: #fff;
+        background-color: #1d2f2f;
+        border-color: black;
+    }
+
 @media (max-width: 767.98px) {
     .container-login {
         width: 100%;
+    }
+    .Write-message-box {
+        background-color: rgba(47,79,79, 0.1);
+        position: sticky;
+        bottom: 0%;
+        padding: 2% 2% 0% 2%;
     }
 }
 
