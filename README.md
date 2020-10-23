@@ -21,3 +21,11 @@ Jag har planerat för att applikationen ska innehålla föjande funktionalitet:
   * Avmarkera inlägg som inte längre är viktiga
 
 
+---
+
+### För att starta projektet i VS Code:
+
+* Öppna mapp /Meddelandecentralen/ShutUp/Server i terminalen
+* Kör kommandot dotnet build
+* Kör kommandot: dotnet run
+* Applikationen ska nu kunna nås på https://localhost:5001/
