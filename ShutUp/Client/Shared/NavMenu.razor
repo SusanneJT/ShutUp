@@ -58,7 +58,6 @@
     private async void LogOut()
     {
         _userState.SetProperty(newUser);
-        Console.WriteLine(_userState.User.Name + " : " + _userState.User.LoggedIn);
         await _localStore.RemoveItemAsync("UserKey");
         _navigationManager.NavigateTo("/");
         Dispose();
