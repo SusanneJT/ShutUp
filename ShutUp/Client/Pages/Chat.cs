@@ -15,13 +15,7 @@ namespace ShutUp.Client.Pages
         private WriteMessageBar writeMessageBar { get; set; } = new WriteMessageBar();
         private AnswerMessage answerMessage { get; set; } = new AnswerMessage();
         private ListSubMessages listSubMessages { get; set; } = new ListSubMessages();
-
         private HubConnection hubConnection;
-        private string messageInput;
-        private bool pinned;
-
-        SubMessage subMessage = new SubMessage();
-
         private bool loading = true;
         private string liClass;
         private string classes = "list-group-item border";
@@ -30,7 +24,7 @@ namespace ShutUp.Client.Pages
 
         protected override async Task OnInitializedAsync()
         {
-            //Should be removed when/if mockdatabase is added
+            //Check if "global-message-state" contains any messages
             if(_messageState.Messages.Count() == 0)
                 _messageState.Messages = await _messageApi.GetAllMessages();
 
@@ -42,12 +36,14 @@ namespace ShutUp.Client.Pages
                 .WithUrl(_navigationManager.ToAbsoluteUri("/chathub"))
                 .Build();
 
+            // Incoming messages
             hubConnection.On<Message>("ReceiveMessage", (message) =>
             {
                 _messageState.Messages.Add(message);
                 StateHasChanged();
             });
 
+            // Incoming submessages
             hubConnection.On<SubMessage>("ReceiveSubMessage", (subMessage) =>
             {
                 Message findMessage = _messageState.Messages.Find(x => subMessage.MessageId == x.MessageId);
@@ -57,6 +53,7 @@ namespace ShutUp.Client.Pages
                 StateHasChanged();
             });
 
+            // Incoming changes from a message
             hubConnection.On<Message>("ReceiveChangedMessage", (message) =>
             {
                 _messageState.ChangeProperty(message);

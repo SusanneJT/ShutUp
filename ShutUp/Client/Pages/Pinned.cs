@@ -14,9 +14,6 @@ namespace ShutUp.Client.Pages
         private WriteMessageBar writeMessageBar { get; set; } = new WriteMessageBar();
         private ListSubMessagesPinned listSubMessages { get; set; } = new ListSubMessagesPinned();
         private HubConnection hubConnection;
-        private Message message;
-        private string messageInput;
-        private string subMessageInput;
         private bool loading = true;
         private bool showWriteMessageBar;
 

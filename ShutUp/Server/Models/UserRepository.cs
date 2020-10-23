@@ -16,7 +16,7 @@ namespace ShutUp.Server.Models
             RegisteredUsers.Add(new User { Name = "Bob", LoggedIn = false, UserId = 3, Avatar = "avatar3.jpg" });
             RegisteredUsers.Add(new User { Name = "Uno", LoggedIn = false, UserId = 4, Avatar = "avatar6.jpg" });
             RegisteredUsers.Add(new User { Name = "Lisa", LoggedIn = false, UserId = 5, Avatar = "avatar2.jpg" });
-            RegisteredUsers.Add(new User { Name = "Guest", LoggedIn = false, UserId = 6, Avatar = "avatar8.jpg" });
+            RegisteredUsers.Add(new User { Name = "Gäst", LoggedIn = false, UserId = 6, Avatar = "avatar8.jpg" });
 
             return RegisteredUsers;
         }
