@@ -431,8 +431,6 @@ C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netsta
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\_Imports.razor.g.cs
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\RazorDeclaration\Pages\Pinned.razor.g.cs
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Pages\Pinned.razor.g.cs
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\RazorDeclaration\Components\EditMessageModal.razor.g.cs
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Components\EditMessageModal.razor.g.cs
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\ic51YWYuTYzPDnh8JS_hGbcdnMgsxPro1SfY1HM4HKM=.hash
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\ZmblDveCGkN9Mp-z9tiCnP13BVcUrO8zk4C5uKQnISQ=.hash
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\RazorDeclaration\Components\WriteMessageBar.razor.g.cs
@@ -441,6 +439,8 @@ C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netsta
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Components\AnswerMessage.razor.g.cs
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\RazorDeclaration\Components\ListSubMessages.razor.g.cs
 C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Components\ListSubMessages.razor.g.cs
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\1eQ4YmFMNAm-ZwehQ03aZVwA59MYCBmZ61VtUp-DWyo=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\K4pTJa23vfq4GQaOG_BryBxFAI1SXrmh7s7wxn_uOEg=.hash
-C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\j2Nf8beITPmm-FJEcAckXgc7DwSBP3LgaKlDsRFjyjo=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\RazorDeclaration\Components\ListSubMessagesPinned.razor.g.cs
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\Razor\Components\ListSubMessagesPinned.razor.g.cs
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\Ob17Y34Qz2zAmvyYPtZmygQEdH01RNu6dbFQpEEw8-Q=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\Fbkga75S76CP_Iswbq62bIkIFY0psWOOhCiVQ_XDs-w=.hash
+C:\Users\admin\Desktop\ShutUp\Meddelandecentralen\ShutUp\Client\obj\Debug\netstandard2.1\integrity\SxuKvYYjdfzqjg_tx3UPRGjpjJQoAokZ_05BCkiTRGs=.hash

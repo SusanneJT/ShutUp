@@ -1,0 +1,94 @@
+﻿@using ShutUp.Shared
+@using Microsoft.AspNetCore.Components
+
+@if (!showSubMessages)
+{
+    <div class="row justify-content-md-end">
+        <button class="btn btn-sm mt-4 border mr-2" @onclick="@ShowSubMessages">Visa @subMessages.Count svar</button>
+    </div>
+}
+else
+{
+    @foreach(var message in subMessages)
+    {
+        <div class="container border mt-3 p-3">
+            <div class="mb-2 bg-light">
+                <img src="/img/@message.User.Avatar" class="rounded" alt="staff image" width="30" />
+                @message.User.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i>
+            </div>
+            @message.MessageText
+        </div>
+    }
+    <div class="d-flex justify-content-between">
+        @if (!showForm)
+        {
+            <button class="btn btn-sm btn-chat mt-2" @onclick="@ShowForm">Svara</button>
+            <button class="btn btn-sm mt-2" @onclick="@Close">Dölj</button>
+        }
+    </div>
+    @if(showForm)
+    {
+        <EditForm Model="@subMessage" class="mt-2">
+            <InputTextArea class="text-box rounded" placeholder="Vad vill du svara?" @bind-Value="@subMessage.MessageText" />
+            <button class="btn btn-chat" @onclick="@(e => Send(subMessage))">Skicka</button>
+            <button class="btn btn-sm" @onclick="@Undo">Ångra</button>
+        </EditForm>
+    }
+
+}
+
+
+
+
+
+@code {
+    [Parameter]
+    public EventCallback<SubMessage> CloseEventCallback { get; set; }
+
+    [Parameter]
+    public List<SubMessage> subMessages { get; set; }
+
+    [Parameter]
+    public int MessageId { get; set; }
+
+    public SubMessage subMessage { get; set; } = new SubMessage();
+
+    public bool showSubMessages;
+    public bool showForm;
+
+    protected override async Task OnInitializedAsync()
+    {
+        showSubMessages = false;
+        showForm = false;
+    }
+
+    public void ShowSubMessages()
+    {
+        showSubMessages = true;
+        StateHasChanged();
+    }
+    public void Close()
+    {
+        showSubMessages = false;
+        StateHasChanged();
+    }
+    public void ShowForm()
+    {
+        showForm = true;
+        StateHasChanged();
+    }
+    public async Task Send(SubMessage subMessage)
+    {
+        subMessage.MessageId = MessageId;
+        await CloseEventCallback.InvokeAsync(subMessage);
+        subMessage.MessageText = "";
+        showForm = false;
+        StateHasChanged();
+    }
+    public void Undo()
+    {
+        showForm = false;
+        StateHasChanged();
+    }
+
+}

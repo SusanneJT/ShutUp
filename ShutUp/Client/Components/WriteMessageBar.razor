@@ -6,7 +6,7 @@
             <InputTextArea class="text-box rounded" placeholder="Vad har du på hjärtat?" @bind-Value="@Message.MessageText" />
             <div class="row">
                 <div class="col-4">
-                    <i class="">Markera som viktigt </i><InputCheckbox type="checkbox" id="pinned" name="pinnedCheck" @bind-Value="@Message.Pinned" />
+                    <span class="oi oi-pin transform" aria-hidden="true"></span> <i class="mr-2"> Markera som viktigt </i><InputCheckbox type="checkbox" id="pinned" name="pinnedCheck" @bind-Value="@Message.Pinned" />
                 </div>
                 <div class="col-8">
                     <button type="submit" class="btn btn-chat btn-block">Skicka</button>

@@ -12,7 +12,6 @@ namespace ShutUp.Client.Pages
 {
     public partial class Chat
     {
-        private EditMessageModal editMessageModal { get; set; } = new EditMessageModal();
         private WriteMessageBar writeMessageBar { get; set; } = new WriteMessageBar();
         private AnswerMessage answerMessage { get; set; } = new AnswerMessage();
         private ListSubMessages listSubMessages { get; set; } = new ListSubMessages();
@@ -77,27 +76,18 @@ namespace ShutUp.Client.Pages
         }
         public Task SendSubMessage(SubMessage subMessage)
         {
-            //SubMessage subMessage = new SubMessage();
             subMessage.User = _userState.User;
-            //subMessage.MessageId = id;
             subMessage.Date = DateTime.Now;
-            //subMessageInput = "";
             return hubConnection.SendAsync("SendSubMessage", subMessage);
         }
 
         public async void Edit(Message message)
         {
-            //editMessageModal.Show(message);
             if (message.Pinned)
                 message.Pinned = false;
             else
                 message.Pinned = true;
 
-            await hubConnection.SendAsync("ChangeMessage", message);
-        }
-
-        public async Task EditMessageModalClose(Message message)
-        {
             await hubConnection.SendAsync("ChangeMessage", message);
         }
 

@@ -44,6 +44,9 @@ namespace ShutUp.Client.Pages
         {
             _userState.OnChange -= StateHasChanged;
         }
-
+        public void RedirectToPinned()
+        {
+            _navigationManager.NavigateTo("/pinned");
+        }
     }
 }

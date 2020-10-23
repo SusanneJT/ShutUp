@@ -7,7 +7,7 @@
 }
 else
 {
-<EditForm Model="@subMessage" class="col ml-5">
+<EditForm Model="@subMessage" class="col ml-2">
     <InputTextArea class="text-box rounded" placeholder="Vad vill du svara?" @bind-Value="@subMessage.MessageText" />
     <button class="btn btn-chat" @onclick="@(e => Send(subMessage))">Skicka</button>
     <button class="btn btn-sm" @onclick="@Undo">Ångra</button>

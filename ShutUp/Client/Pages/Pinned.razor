@@ -8,7 +8,8 @@
 @inject UserStateContainer _userState
 @implements IDisposable
 
-<h3>Pinned</h3>
+
+<h2 class="text-center beanie mb-5 text-green" >Viktiga meddelanden <span class="oi oi-pin transform"></span></h2>
 
 @if (loading)
 {
@@ -17,39 +18,63 @@
 else
 {
 
-    <ul id="messagesList" class="list-group">
-        @foreach (var message in _messageState.Messages)
-        {
-            @if(message.Pinned)
+    <div class="container">
+        <div class="row">
+            @foreach (var message in _messageState.Messages)
             {
-                <li class="list-group-item">
-                    @message.User.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
-                    @message.MessageText
+                @if (message.Pinned)
+                {
+                <div class="col-sm-8 col-md-6 col-lg-4 mt-1 mb-3">
+                    <div class="card">
+                        <div class="card-header d-flex justify-content-between">
+                            <div class="col-10 text-left">
+                                <img src="/img/@message.User.Avatar" class="rounded" alt="staff image" width="30" />
+                                @message.User.Name <br />
+                                <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i>
+                            </div>
+                            <div class="col text-right">
+                                <span class="oi oi-pin transform" aria-hidden="true" @onclick="@(e => Edit(message))"></span>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            @message.MessageText
 
-                    @if (message.SubMessages != null)
-                    {
-                        <br />
-                        <ul class="list-group">
-                            @foreach (var subMessage in message.SubMessages)
+                            @if (message.SubMessages != null)
                             {
-                                <li class="list-group-item">
-                                    @subMessage.User.Name <i class="small">@subMessage.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
-                                    @subMessage.MessageText
-                                </li>
+                                <ListSubMessagesPinned @ref="@listSubMessages" SubMessages="@message.SubMessages" MessageId="@message.MessageId" CloseEventCallback="@SendSubMessage"></ListSubMessagesPinned>                        
                             }
-                        </ul>
-                    }
-                    <div class="form-group">
-                        <br />
-                        <label>
-                            Svara:
-                            <input @bind="subMessageInput" size="50" />
-                        </label>
-                        <button @onclick="@(e => Send(message.MessageId))" disabled="@(!IsConnected)">Send</button>
+                            else
+                            {
+                                <div class="d-flex justify-content-end mt-4">
+                                    <CascadingValue Name="MessageID" Value="@message.MessageId">
+                                        <AnswerMessage @ref="@answerMessage" CloseEventCallback="@SendSubMessage"></AnswerMessage>
+                                    </CascadingValue>
+                                </div>
+                            }
+                        </div>
+
                     </div>
-                </li>
+                </div>
+                }
             }
-            
-         }
-    </ul>
+
+
+                @if (showWriteMessageBar)
+                {
+                    <div class="col-sm-8 col-md-6 col-lg-4 mt-1 mb-3">
+                        <h6 class="text-right text-green" @onclick="@Hide"><span class="oi oi-x" aria-hidden="true"></span></h6>
+                        <WriteMessageBar @ref="@writeMessageBar" CloseEventCallback="@Send"></WriteMessageBar>
+                    </div>
+                }
+                else
+                {
+                    <div class="col-sm-8 col-md-6 col-lg-4 mt-1 mb-3">
+                        <h2 class="text-green text-center mt-5 plus" @onclick="@ShowWriteMessageBar"><span class="oi oi-plus mt-5"></span></h2>
+                    </div>
+                }
+
+        </div>
+    </div>
+
+  
 }
