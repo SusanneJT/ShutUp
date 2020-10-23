@@ -9,8 +9,10 @@
 
 @if (_userState.User.LoggedIn)
 {
-    <h2>Hej @_userState.User.Name</h2>
-
+    <div class="text-center mt-5">
+        <h3 class="roboto text-green">Du är inloggad som @_userState.User.Name</h3>
+        <button class="btn btn-lg btn-chat mt-3" @onclick="@RedirectToPinned">Gå vidare till sidan viktigt</button>
+    </div>
 }
 else
 {

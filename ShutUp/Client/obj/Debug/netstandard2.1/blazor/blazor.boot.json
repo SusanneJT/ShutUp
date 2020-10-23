@@ -6,7 +6,7 @@
   "linkerEnabled": false,
   "resources": {
     "assembly": {
-      "ShutUp.Client.dll": "sha256-1eQ4YmFMNAm\/ZwehQ03aZVwA59MYCBmZ61VtUp\/DWyo=",
+      "ShutUp.Client.dll": "sha256-Ob17Y34Qz2zAmvyYPtZmygQEdH01RNu6dbFQpEEw8\/Q=",
       "Microsoft.AspNetCore.SignalR.Client.dll": "sha256-91IongxLx5GvDqOC29QW2P774JwJ94eKU\/ARxoB+lcU=",
       "Microsoft.Extensions.DependencyInjection.Abstractions.dll": "sha256-yFTwTS16q6jefUDI6nVJSEskooCjUCYQYKoLAkZ2nck=",
       "netstandard.dll": "sha256-\/zcPVM75OAY+joGVM8yIC1gO1SFYWP1CFERgQ8PJkfA=",
@@ -53,11 +53,11 @@
       "Microsoft.Extensions.Logging.dll": "sha256-ZPq6B\/OiLSulwux7YLXx\/NihIbjxBmbDQijJemWNhow=",
       "System.Threading.Channels.dll": "sha256-zT4jWv9mA9ljJBiDW5pkQqXrJMd5IWsU7LQ9Nnjdios=",
       "System.Net.Http.Json.dll": "sha256-99dseBOagY3mzu5Y8Eqm8gRI+o8QbbCp7R2Ew9bQ+5E=",
+      "Microsoft.AspNetCore.Components.Web.dll": "sha256-bSgsT2x5xMvs8mara5wU+EJwcyHa9GVMU85HwhWcdWM=",
       "Microsoft.AspNetCore.Components.Forms.dll": "sha256-m7Q+cF5\/ji3OMfdGlCuE8pQ\/iM+kxNHLq\/IEWVvIaOg=",
       "System.ComponentModel.Annotations.dll": "sha256-tmnkCmP9OzLUkpQ3LP7PRosi7gt5pyfEZCM6aqAokFI=",
       "System.ComponentModel.DataAnnotations.dll": "sha256-LIfCYwg+PHltTK4z3EnbSkA7m2cn8JS4jHVthdKrDF8=",
       "Microsoft.AspNetCore.Components.dll": "sha256-PEg9ghiKSWBTX0jq8pFDvv2Yvw92Y8W0ELtWrSE4fhA=",
-      "Microsoft.AspNetCore.Components.Web.dll": "sha256-bSgsT2x5xMvs8mara5wU+EJwcyHa9GVMU85HwhWcdWM=",
       "Blazored.LocalStorage.dll": "sha256-7+FtaZd2xSysaMLC59XhYdtkNMZ15ha0lk73dxPdT5w=",
       "Microsoft.JSInterop.dll": "sha256-LqwA2Rpm96Ualk0IhLZar87kfRCyKHzHTeTt2jYhm7M=",
       "ShutUp.Shared.dll": "sha256-ic51YWYuTYzPDnh8JS+hGbcdnMgsxPro1SfY1HM4HKM=",
@@ -72,7 +72,7 @@
       "Microsoft.JSInterop.WebAssembly.dll": "sha256-czNf3btAeBW\/vvID5LAfgcsNZ+GM3ssVuPaMflcg0rs="
     },
     "pdb": {
-      "ShutUp.Client.pdb": "sha256-K4pTJa23vfq4GQaOG+BryBxFAI1SXrmh7s7wxn+uOEg=",
+      "ShutUp.Client.pdb": "sha256-Fbkga75S76CP+Iswbq62bIkIFY0psWOOhCiVQ+XDs\/w=",
       "ShutUp.Shared.pdb": "sha256-ZmblDveCGkN9Mp\/z9tiCnP13BVcUrO8zk4C5uKQnISQ="
     },
     "runtime": {

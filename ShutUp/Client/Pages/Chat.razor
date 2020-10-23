@@ -33,7 +33,7 @@ else
                         @message.User.Name <i class="small">@message.Date.ToString("yyyy-MM-dd HH:mm")</i><br />
                     </div>
                     <div class="col text-right">
-                        <span class="oi oi-bullhorn" aria-hidden="true" @onclick="@(e => Edit(message))"></span>
+                        <span class="oi oi-pin transform" aria-hidden="true" @onclick="@(e => Edit(message))"></span>
                     </div>
                 </div>
                 <div class="col mt-2">
@@ -59,7 +59,6 @@ else
       
         }
     </ul>
-    <EditMessageModal @ref="@editMessageModal"  CloseEventCallback="@EditMessageModalClose" ></EditMessageModal>
     
     <WriteMessageBar @ref="@writeMessageBar"  CloseEventCallback="@Send"></WriteMessageBar>
 
